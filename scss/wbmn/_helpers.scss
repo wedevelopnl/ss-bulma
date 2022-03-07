@@ -1,0 +1,32 @@
+//=======================================================
+//  OPACITIES
+//=======================================================
+@each $opacity, $value in $opacities {
+  .has-opacity-#{$opacity} {
+    opacity: $value !important;
+
+    &.has-hover {
+      &:hover {
+        opacity: 1 !important;
+      }
+    }
+  }
+}
+
+//=======================================================
+//  INDEXES
+//=======================================================
+@each $index, $value in $indexes {
+  .has-index-#{$index} {
+    opacity: $index !important;
+  }
+}
+
+//=======================================================
+//  ORDERS
+//=======================================================
+@each $order, $value in $orders {
+  .has-order-#{$order} {
+    order: $order !important;
+  }
+}

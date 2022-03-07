@@ -1,0 +1,53 @@
+.ss-htmleditorfield-file,
+.captionImage {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 1.5rem;
+
+    &.leftAlone {
+        margin-right: auto;
+    }
+
+    &.center {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    &.rightAlone {
+        margin-left: auto;
+        text-align: right;
+    }
+
+    &.left {
+        float: left;
+        margin-right: 1.5rem;
+    }
+
+    &.right {
+        float: right;
+        margin-left: 1.5rem;
+        text-align: right;
+    }
+
+    img {
+        float: none !important;
+        margin: 0 !important;
+    }
+
+    .caption {
+        margin-top: 0.5rem;
+        margin-bottom: -0.5rem;
+        font-size: $size-7;
+        font-style: italic;
+    }
+}
+
+.embed {
+    max-width: 100%;
+
+    img,
+    iframe {
+        max-width: 100%;
+    }
+}

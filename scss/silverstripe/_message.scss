@@ -1,0 +1,50 @@
+.message {
+    border: $border-1;
+    padding: 0.5rem 1rem;
+    font-size: $size-7;
+    line-height: 1.25rem;
+    background-color: lighten($text, 60);
+    border-color: $text;
+    display: block;
+    border-radius: 1.175rem;
+
+    &.is-info,
+    &.info {
+        color: $info;
+        background-color: lighten($info, 43);
+        border-color: $info;
+    }
+
+    &.notice,
+    &.warning,
+    &.is-warning,
+    &.validation {
+        color: $warning;
+        background-color: lighten($warning, 20);
+        border-color: $warning;
+    }
+
+    &.bad,
+    &.error,
+    &.danger,
+    &.is-danger,
+    &.required {
+        color: $danger;
+        background-color: lighten($danger, 35);
+        border-color: $danger;
+    }
+
+    &.good,
+    &.is-success,
+    &.success {
+        color: $success;
+        background-color: lighten($success, 43);
+        border-color: $success;
+    }
+}
+
+form {
+    .message {
+        margin-top: 0.75rem;
+    }
+}

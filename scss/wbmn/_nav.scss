@@ -1,0 +1,84 @@
+.nav {
+  > ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+    margin-left: -($nav-gutter-normal / 2);
+    margin-right: -($nav-gutter-normal / 2);
+
+    > li {
+      padding-left: ($nav-gutter-normal / 2);
+      padding-right: ($nav-gutter-normal / 2);
+
+      > a,
+      > span {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  &.is-gutterless {
+    > ul {
+      margin-left: 0;
+      margin-right: 0;
+
+      > li {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+
+  // SPACINGS SIZES
+  @each $name, $value in $navGutters {
+    &.is-#{$name} {
+      > ul {
+        margin-left: -($value / 2);
+        margin-right: -($value / 2);
+
+        > li {
+          padding-left: ($value / 2);
+          padding-right: ($value / 2);
+        }
+      }
+    }
+  }
+
+  // VERTICAL
+  &.is-vertical {
+    > ul {
+      flex-direction: column;
+      align-items: stretch;
+      margin: -($nav-gutter-normal / 4) 0;
+
+      > li {
+        padding-right: 0;
+        padding-left: 0;
+        margin: 0 !important;
+
+        > a,
+        > span {
+          padding: ($nav-gutter-normal / 4) 0;
+        }
+      }
+    }
+
+    @each $name, $value in $navGutters {
+      &.is-#{$name} {
+        > ul {
+          margin-top: -($value / 4);
+          margin-bottom: -($value / 4);
+
+          > li {
+            padding-top: ($value / 4);
+            padding-bottom: ($value / 4 );
+          }
+        }
+      }
+    }
+  }
+}

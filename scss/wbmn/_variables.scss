@@ -1,18 +1,87 @@
 // SECTIONS
-$section-padding-smallest:      10px;
-$section-padding-smaller:       30px;
-$section-padding-small:         50px;
-$section-padding-normal:        75px;
-$section-padding-medium:        100px;
-$section-padding-large:         125px;
-$section-padding-larger:        175px;
+$section-padding-smallest:      10px !default;
+$section-padding-smaller:       30px !default;
+$section-padding-small:         50px !default;
+$section-padding-normal:        75px !default;
+$section-padding-medium:        100px !default;
+$section-padding-large:         125px !default;
+$section-padding-larger:        175px !default;
 
-$section-padding-mobile:        $section-padding-small;
+$section-padding-mobile:        $section-padding-small !default;
 
 $sectionPaddings: (
     "none": 0,
     "smallest": $section-padding-smallest,
     "smaller": $section-padding-smaller,
     "small": $section-padding-small,
-    "normal": $section-padding-normal
-);
+    "normal": $section-padding-normal,
+    "medium": $section-padding-medium,
+    "large": $section-padding-large,
+    "larger": $section-padding-larger,
+) !default;
+
+// NAV
+$nav-gutter-smallest:      5px !default;
+$nav-gutter-smaller:       10px !default;
+$nav-gutter-small:         15px !default;
+$nav-gutter-normal:        30px !default;
+$nav-gutter-medium:        40px !default;
+$nav-gutter-large:         50px !default;
+$nav-gutter-larger:        75px !default;
+
+$navGutters: (
+  "none": 0,
+  "smallest": $nav-gutter-smallest,
+  "smaller": $nav-gutter-smaller,
+  "small": $nav-gutter-small,
+  "normal": $nav-gutter-normal,
+  "medium": $nav-gutter-medium,
+  "large": $nav-gutter-large,
+  "larger": $nav-gutter-larger,
+) !default;
+
+// INDEXES
+$indexes: (
+  10, 20, 30, 40, 50, 60, 70, 80, 90, 100
+) !default;
+
+// ORDERS
+$orders: (
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100
+) !default;
+
+// OPACITIES
+$opacities: (
+        "10": 0.1,
+        "20": 0.2,
+        "25": 0.25,
+        "30": 0.3,
+        "33": 0.33,
+        "40": 0.4,
+        "50": 0.5,
+        "60": 0.6,
+        "70": 0.7,
+        "75": 0.75,
+        "80": 0.8,
+        "90": 0.9,
+        "100": 1
+) !default;
+
+// VISUALS
+$visual-height-smaller:     150px;
+$visual-height-small:       250px;
+$visual-height:             420px;
+$visual-height-medium:      500px;
+$visual-height-large:       650px;
+$visual-height-larger:      800px;
+
+$visual-overlay:            rgba($black, 0.4);
+
+// TRANSITIONS
+$transition-time:           0.25s;
+$transition-animation:      ease-out;
+$transition-1:              all $transition-time $transition-animation;
+
+// BORDER
+$border-size-1:             1px;
+$border-1:                  $border-size-1 solid $border;
