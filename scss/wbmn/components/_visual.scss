@@ -1,0 +1,48 @@
+//=======================================================
+//  SECTIONS
+//=======================================================
+.visual {
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &.has-overlay {
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: $visual-overlay;
+            pointer-events: none;
+        }
+
+        > * {
+            position: relative;
+            z-index: 20;
+        }
+    }
+
+    // SIZES
+    @each $name, $value in $visualSizes {
+        &.is-#{$name} {
+            min-height: $value;
+        }
+    }
+}
+
+.visual-content {
+    padding-right: $column-gap;
+    padding-left: $column-gap;
+}
+
+@media screen and (max-width: $tablet) {
+    .visual:not(.is-full-screen) {
+        min-height: 0 !important;
+    }
+}

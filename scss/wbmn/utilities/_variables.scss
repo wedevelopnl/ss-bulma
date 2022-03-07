@@ -70,12 +70,23 @@ $opacities: (
 // VISUALS
 $visual-height-smaller:     150px;
 $visual-height-small:       250px;
-$visual-height:             420px;
+$visual-height-normal:      420px;
 $visual-height-medium:      500px;
 $visual-height-large:       650px;
 $visual-height-larger:      800px;
 
 $visual-overlay:            rgba($black, 0.4);
+
+$visualSizes: (
+  "none": 0,
+  "smaller": $visual-height-smaller,
+  "small": $visual-height-small,
+  "normal": $visual-height-normal,
+  "medium": $visual-height-medium,
+  "large": $visual-height-large,
+  "larger": $visual-height-larger,
+  "full-screen": 100vh,
+) !default;
 
 // TRANSITIONS
 $transition-time:           0.25s;

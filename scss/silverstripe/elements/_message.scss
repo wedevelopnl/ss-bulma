@@ -2,49 +2,41 @@
     border: $border-1;
     padding: 0.5rem 1rem;
     font-size: $size-7;
-    line-height: 1.25rem;
     background-color: lighten($text, 60);
     border-color: $text;
-    display: block;
-    border-radius: 1.175rem;
+    border-radius: $radius;
 
     &.is-info,
     &.info {
         color: $info;
-        background-color: lighten($info, 43);
+        background-color: lighten($info, 41);
         border-color: $info;
     }
 
+    &.is-warning,
     &.notice,
     &.warning,
-    &.is-warning,
     &.validation {
         color: $warning;
-        background-color: lighten($warning, 20);
+        background-color: lighten($warning, 45);
         border-color: $warning;
     }
 
+    &.is-danger,
     &.bad,
     &.error,
     &.danger,
-    &.is-danger,
     &.required {
         color: $danger;
         background-color: lighten($danger, 35);
         border-color: $danger;
     }
 
-    &.good,
     &.is-success,
-    &.success {
+    &.success,
+    &.good {
         color: $success;
         background-color: lighten($success, 43);
         border-color: $success;
-    }
-}
-
-form {
-    .message {
-        margin-top: 0.75rem;
     }
 }
