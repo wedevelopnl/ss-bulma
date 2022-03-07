@@ -1,0 +1,24 @@
+{
+  "name": "ss-bulma",
+  "version": "1.0.0",
+  "description": "Extension for Bulma css framework intended for use with SilverStripe",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass ./scss/main.scss:./css/main.css --watch --no-source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thewebmen/ss-bulma.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thewebmen/ss-bulma/issues"
+  },
+  "homepage": "https://github.com/thewebmen/ss-bulma#readme",
+  "dependencies": {
+    "bulma": "^0.9.3",
+    "sass": "^1.49.9"
+  }
+}
