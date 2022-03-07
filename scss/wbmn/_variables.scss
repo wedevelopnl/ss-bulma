@@ -1,0 +1,18 @@
+// SECTIONS
+$section-padding-smallest:      10px;
+$section-padding-smaller:       30px;
+$section-padding-small:         50px;
+$section-padding-normal:        75px;
+$section-padding-medium:        100px;
+$section-padding-large:         125px;
+$section-padding-larger:        175px;
+
+$section-padding-mobile:        $section-padding-small;
+
+$sectionPaddings: (
+    "none": 0,
+    "smallest": $section-padding-smallest,
+    "smaller": $section-padding-smaller,
+    "small": $section-padding-small,
+    "normal": $section-padding-normal
+);
