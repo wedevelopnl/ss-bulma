@@ -6,8 +6,7 @@ Extension for Bulma css framework intended for use with SilverStripe.
 2. For compiling sass run `npm run dev`
 
 # TODO
-* wbmn/nav spacing sizes as map (for both horizontal and vertical)
-* wbmn/visual rewrite
-* silverstripe/messages rewrite
-* silverstripe/messages rewrite
-* silverstripe/form default form field styling
+* wbmn/visual rewrite (steven)
+* silverstripe/messages rewrite (steven)
+* silverstripe/form default form field styling (steven)
+* template engine for nav/footer (ridvan)
