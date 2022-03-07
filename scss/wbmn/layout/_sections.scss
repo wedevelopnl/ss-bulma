@@ -13,14 +13,14 @@
   }
 
   // REMOVE DOUBLE PADDING
-  &:not([class*="has-background-"]):not(.is-styled) {
-    + .section:not([class*="has-background-"]):not(.is-styled) {
+  &:not([class*="has-background-"]):not(.is-styled):not(.visual) {
+    + .section:not([class*="has-background-"]):not(.is-styled):not(.visual) {
       padding-top: 0;
     }
   }
   @each $name, $pair in $colors {
-    &.has-background-#{$name}:not(.is-styled) {
-      + .section.has-background-#{$name}:not(.is-styled) {
+    &.has-background-#{$name}:not(.is-styled):not(.visual) {
+      + .section.has-background-#{$name}:not(.is-styled):not(.visual) {
         padding-top: 0;
       }
     }

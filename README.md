@@ -6,6 +6,5 @@ Extension for Bulma css framework intended for use with SilverStripe.
 2. For compiling sass run `npm run dev`
 
 # TODO
-* silverstripe/messages rewrite (steven)
 * silverstripe/form default form field styling (steven)
 * template engine for nav/footer (ridvan)
