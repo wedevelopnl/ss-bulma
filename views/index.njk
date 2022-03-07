@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction - SS Bulma</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+{% include "./includes/nav.html" %}
+
+<div class="section">
+    <div class="container">
+        <div class="content">
+            <h1>Why SS-Bulma?</h1>
+            <p>
+                Bulma is a great CSS framework, but as front-end developers we're missing some things. Instead of
+                copying the same custom css over and over again, we decided to make a npm module to combat this
+                problem.
+            </p>
+            <p>
+                The name SS-Bulma is an extension to the naming of Bulma. SS stands for SilverStripe, the CMS we
+                mostly use for Bulma. But SS could also stand for Super Saiyan. All you Dragonball fans know what
+                we mean. :)
+            </p>
+        </div>
+    </div>
+</div>
+<div class="section has-background-white-ter" id="nav">
+    <div class="container">
+        <div class="content">
+            <h2>Nav</h2>
+            <p>
+                A simple spaced nav element for horizontal and vertical navs. Just put a <code>ul</code> or
+                <code>ol</code> inside a <code>.nav</code>. The <code>li</code> takes both <code>a</code> and
+                <code>span</code> tags.
+            </p>
+            <h3 class="is-size-4">Horizontal</h3>
+            <p>By default the nav element is horizontal.</p>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="">Link item 1</a></li>
+                <li><a href="">Link item 2</a></li>
+                <li><span>Span item 3</span></li>
+            </ul>
+        </nav>
+        <div class="content mt-5">
+            <h3 class="is-size-4">Vertical</h3>
+            <p>
+                Adding a <code>.is-vertical</code> to the <code>.nav</code> makes it vertical. For vertical navs the
+                spacing is halved.
+            </p>
+        </div>
+        <nav class="nav is-vertical">
+            <ul>
+                <li><a href="">Link item 1</a></li>
+                <li><a href="">Link item 2</a></li>
+                <li><span>Span item 3</span></li>
+            </ul>
+        </nav>
+        <div class="content mt-5">
+            <h3 class="is-size-4">Spacings</h3>
+            <p>You can add several spacing classes to increase or decrease spacing.</p>
+        </div>
+        <table class="table is-bordered">
+            <tbody>
+            <tr>
+                <td class="is-narrow pr-6">
+                    <code>.is-smallest</code>
+                </td>
+                <td class="is-narrow">
+                    <small class="tag">spacing</small>
+                </td>
+                <td>
+                    <code>$nav-gutter-smallest</code>
+                </td>
+            </tr>
+            <tr>
+                <td class="is-narrow pr-6">
+                    <code>.is-smaller</code>
+                </td>
+                <td class="is-narrow">
+                    <small class="tag">spacing</small>
+                </td>
+                <td>
+                    <code>$nav-gutter-smaller</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>.is-small</code>
+                </td>
+                <td>
+                    <small class="tag">spacing</small>
+                </td>
+                <td>
+                    <code>$nav-gutter-small</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>.is-normal</code>
+                </td>
+                <td>
+                    <small class="tag">spacing</small>
+                </td>
+                <td>
+                    <code>$nav-gutter-normal</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>.is-medium</code>
+                </td>
+                <td>
+                    <small class="tag">spacing</small>
+                </td>
+                <td>
+                    <code>$nav-gutter-medium</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>.is-large</code>
+                </td>
+                <td>
+                    <small class="tag">spacing</small>
+                </td>
+                <td>
+                    <code>$nav-gutter-large</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>.is-larger</code>
+                </td>
+                <td>
+                    <small class="tag">spacing</small>
+                </td>
+                <td>
+                    <code>$nav-gutter-larger</code>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <nav class="nav is-larger mt-3">
+            <ul>
+                <li><a href="">Link item 1</a></li>
+                <li><a href="">Link item 2</a></li>
+                <li><span>Span item 3</span></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+{% include "./includes/footer.html" %}
+</body>
+</html>
