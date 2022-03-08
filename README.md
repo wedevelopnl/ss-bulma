@@ -7,19 +7,26 @@ Extension for Bulma css framework intended for use with SilverStripe.
 3. Visit http://localhost:5000/
 4. For compiling sass run `npm run dev`
 
-# TODO RIDVAN
+# TODO's
+Get to work boys!
+
+### Ridvan
 * wbmn/tables
 * wbmn/embed
 * wbmn/holygrail
 
-# TODO STEVEN
+### Steven
 * wbmn/sections
 * wbmn/visual
 * wbmn/content
 * wbmn/links
 * silverstripe/form default form field styling
 
-### Integrating Nunjucks with PHPStorm
+# STYLE GUIDE
+* Use https://sebpearce.com/bullshit/ for generating content
+* Use `<h2 class="is-size-4">` for subtitles
+
+# Integrating Nunjucks with PHPStorm
 1. Go to File > Settings > Editor > File Types
 2. Search for `Twig`
 3. Add a new custom pattern `*.njk`
