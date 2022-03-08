@@ -17,7 +17,6 @@ Get to work boys!
 
 ### Steven
 * wbmn/sections
-* wbmn/visual
 * wbmn/content
 * wbmn/links
 * silverstripe/form default form field styling

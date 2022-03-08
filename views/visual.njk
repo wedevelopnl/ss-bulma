@@ -6,7 +6,7 @@
                 <h2>Visual</h2>
                 <p>
                     By default a <code>.visual</code> scales with the content. If you want to have default padding,
-                    add the <code>.section</code> class to the visual. You can also use the <code>.is-*</code>
+                    add the <code>.section</code> class to the visual. You can also use the <code>.is-{size}</code>
                     options to set a default minimal height. Adding <code>.has-overlay</code> will create a
                     darkening overlay.
                 </p>
@@ -129,44 +129,50 @@
             </table>
         </div>
     </div>
-    <div class="visual section is-justify-content-center has-overlay has-text-white"
+    <div class="visual section has-overlay has-text-white"
          style="background-image: url('images/simon-lee-36TSQemRAxo-unsplash.jpg');">
         <div class="visual-content">
             <div class="container">
-                <div class="content">
-                    <h2>Dit is een default visual met section</h2>
-                    <p>
-                        Illusion is born in the gap where ecstasy has been excluded. Only a visitor of the universe may
-                        integrate this flow of being. Yes, it is possible to destroy the things that can confront us,
-                        but not without non-locality on our side.
-                    </p>
+                <div class="columns">
+                    <div class="column is-6-desktop">
+                        <div class="content">
+                            <h2>
+                                Default darkened visual
+                            </h2>
+                            <p>
+                                Illusion is born in the gap where ecstasy has been excluded. Only a visitor of the
+                                universe may
+                                integrate this flow of being. Yes, it is possible to destroy the things that can
+                                confront us,
+                                but not without non-locality on our side.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="section">
-        <div class="visual-content">
-            <div class="container">
-                <div class="content">
-                    <h2 class="is-size-4">In columns</h2>
-                    <p>
-                        You can use visuals in columns
-                    </p>
-                </div>
-                <div class="columns">
-                    <div class="column is-6">
-                        <div class="visual section has-overlay has-text-white"
-                             style="background-image: url('images/simon-lee-36TSQemRAxo-unsplash.jpg');">
-                            <div class="visual-content">
-                                <div class="container">
-                                    <div class="content">
-                                        <h2>Dit is een default visual met section</h2>
-                                        <p>
-                                            Illusion is born in the gap where ecstasy has been excluded. Only a visitor of the universe may
-                                            integrate this flow of being. Yes, it is possible to destroy the things that can confront us,
-                                            but not without non-locality on our side.
-                                        </p>
-                                    </div>
+        <div class="container">
+            <div class="content">
+                <h2 class="is-size-4">Non full page width visuals</h2>
+                <p>
+                    You can use non full page width visuals as well, just by putting them inside a container and/or
+                    column.
+                </p>
+            </div>
+            <div class="columns">
+                <div class="column is-6-desktop">
+                    <div class="visual section has-overlay has-text-white"
+                         style="background-image: url('images/simon-lee-36TSQemRAxo-unsplash.jpg');">
+                        <div class="visual-content">
+                            <div class="container">
+                                <div class="content">
+                                    <h2>Non full page width visual</h2>
+                                    <p>
+                                        It can be difficult to know where to begin. Prophet, look within and fulfill
+                                        yourself. Although you may not realize it, you are heroic.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -175,17 +181,44 @@
             </div>
         </div>
     </div>
-    <div class="visual section has-overlay has-text-white"
+    <div class="section">
+        <div class="container">
+            <div class="content">
+                <h2 class="is-size-4">Sizes, alignment and content</h2>
+                <p>
+                    By adding a size (i.e. <code>.is-medium</code>) to the visual you can increase the minimum height of
+                    the visual. Adding <code>.is-justify-content-center</code> will center the content vertically.Of
+                    course you can use the Bulma columns options to further align and contain your content as well.
+                </p>
+                <p>
+                    You can use other helper classes to change the alignment and style of the content. With this you can
+                    create lots of different styled visuals.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="visual section is-medium is-justify-content-center has-overlay has-text-white"
          style="background-image: url('images/simon-lee-36TSQemRAxo-unsplash.jpg');">
         <div class="visual-content">
             <div class="container">
-                <div class="content">
-                    <h2>Dit is een default visual met section</h2>
-                    <p>
-                        Illusion is born in the gap where ecstasy has been excluded. Only a visitor of the universe may
-                        integrate this flow of being. Yes, it is possible to destroy the things that can confront us,
-                        but not without non-locality on our side.
-                    </p>
+                <div class="columns">
+                    <div class="column is-6-desktop is-offset-3-desktop">
+                        <div class="content">
+                            <h2>
+                                Medium darkened visual with centered content
+                            </h2>
+                            <p class="is-size-5">
+                                Knowledge is the driver of serenity. The goal of sub-atomic particles is to plant the
+                                seeds of sharing rather than ego. This life is nothing short of a condensing flow of
+                                amazing truth.
+                            </p>
+                            <p>
+                                <a href="" class="button is-primary">
+                                    This is a button
+                                </a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
