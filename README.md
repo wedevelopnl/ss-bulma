@@ -10,12 +10,7 @@ Extension for Bulma css framework intended for use with SilverStripe.
 # TODO's
 Get to work boys!
 
-### Ridvan
-* wbmn/tables
-* wbmn/embed
-
 ### Steven
-* wbmn/content
 * wbmn/links
 * silverstripe/form default form field styling
 

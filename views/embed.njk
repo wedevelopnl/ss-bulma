@@ -5,9 +5,28 @@
             <div class="content">
                 <h1>Embed</h1>
                 <p>
-                   Since Bulma itself doesn't provide a helper class for an iframe element to be responsive. We added a new helper class to make an iframe responsive.
-                   There is a helper class to make an iframe responsive add this class <code>.embed-responsive</code> to the element!
+                    Since Bulma itself doesn't provide a helper class for an iframe with a fixed ratio we added one.
+                    Just wrap the iframe in a <code>.embed-responsive</code>. By default this is in a 16:9 ratio, if you
+                    want 4:3 just add <code>.is-4by3</code>.
                 </p>
+            </div>
+            <div class="columns is-multiline">
+                <div class="column is-6-desktop">
+                    <div class="embed-responsive">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/u-oOdhS4Fc4"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="column is-6-desktop">
+                    <div class="embed-responsive is-4by3">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/SCSAExGFK1E"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

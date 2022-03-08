@@ -40,11 +40,6 @@ const pageRoutes = [
         template: 'links.njk'
     },
     {
-        title: 'Tables',
-        route: '/tables',
-        template: 'tables.njk'
-    },
-    {
         title: 'Embed',
         route: '/embed',
         template: 'embed.njk'
