@@ -4,7 +4,7 @@
   "description": "Extension for Bulma css framework intended for use with SilverStripe",
   "main": "index.js",
   "scripts": {
-    "dev": "sass ./scss/main.scss:./public/css/main.css --watch --no-source-map",
+    "dev": "sass ./scss/main.scss:./css/main.css --watch --no-source-map --style compressed",
     "client": "nodemon index.js"
   },
   "repository": {
