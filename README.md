@@ -7,12 +7,6 @@ Extension for Bulma css framework intended for use with SilverStripe.
 3. Visit http://localhost:5000/
 4. For compiling sass run `npm run dev`
 
-# TODO's
-Get to work boys!
-
-### Steven
-* silverstripe/form default form field styling
-
 # STYLE GUIDE
 * Use https://sebpearce.com/bullshit/ for generating content
 * Use `<h2 class="is-size-4">` for subtitles

@@ -53,6 +53,11 @@ const pageRoutes = [
         title: 'Messages',
         route: '/messages',
         template: 'messages.njk'
+    },
+    {
+        title: 'Forms',
+        route: '/forms',
+        template: 'forms.njk'
     }
 ];
 app.use(express.static(path.join(__dirname, '/')));

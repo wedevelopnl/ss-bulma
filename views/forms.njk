@@ -1,0 +1,37 @@
+{% extends "base.njk" %}
+{% block content %}
+    <div class="section">
+        <div class="container">
+            <div class="content">
+                <h2>Silverstripe forms</h2>
+                <p>
+                    Since Silverstripe renders it's own forms with their own classes they are not styled by default.
+                    To solve this problem we add some default styling to the form elements inside a default Silverstripe
+                    <code>.field</code> class by extending from the Bulma classes.
+                </p>
+            </div>
+            <form>
+                <fieldset>
+                    <div class="field">
+                        <label class="left" for="firstname">First name</label>
+                        <div class="middleColumn">
+                            <input type="text" class="text" id="firstname" name="firstname">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="left" for="lastname">Last name</label>
+                        <div class="middleColumn">
+                            <input type="text" class="text" id="lastname" name="lastname">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="left" for="comment">Comment</label>
+                        <div class="middleColumn">
+                            <textarea class="text" id="comment" name="comment"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+{% endblock %}
