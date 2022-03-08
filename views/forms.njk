@@ -12,6 +12,19 @@
             </div>
             <form>
                 <fieldset>
+                    <div class="field dropdown">
+                        <label class="left" for="country">Country</label>
+                        <div class="middleColumn">
+                            <select name="country" class="dropdown" id="country">
+                                <option value="" selected="">Choose a country</option>
+                                <option value="NL">Netherlands</option>
+                                <option value="DE">Germany</option>
+                                <option value="BE">Belgium</option>
+                                <option value="FR">France</option>
+                                <option value="US">United States of America in North-America</option>
+                            </select>
+                        </div>
+                    </div>
                     <div class="field">
                         <label class="left" for="firstname">First name</label>
                         <div class="middleColumn">
@@ -30,7 +43,22 @@
                             <textarea class="text" id="comment" name="comment"></textarea>
                         </div>
                     </div>
+                    <div class="field file">
+                        <label class="left" for="file">File</label>
+                        <div class="middleColumn">
+                            <input type="file" class="file" id="file">
+                        </div>
+                    </div>
+                    <div class="field checkbox">
+                        <div class="middleColumn">
+                            <input type="checkbox" name="agree" value="1" class="checkbox " id="agree">
+                            <label class="left" for="agree"> I agree to the <a href="">terms</a></label>
+                        </div>
+                    </div>
                 </fieldset>
+                <div class="btn-toolbar Actions">
+                    <input type="submit" class="action">
+                </div>
             </form>
         </div>
     </div>

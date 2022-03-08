@@ -15,4 +15,56 @@
             @extend .label;
         }
     }
+
+    select {
+        @extend .select;
+    }
+
+    &.dropdown {
+        display: block;
+
+        .middleColumn {
+            position: relative;
+
+            select {
+                padding-right: 2.5rem;
+            }
+
+            &::after {
+                content: "";
+                width: 0.75rem;
+                height: 0.75rem;
+                position: absolute;
+                top: calc(50% - 0.500rem);
+                right: 1rem;
+                border: 2px solid $text;
+                border-bottom: none;
+                border-left: none;
+                transform: rotate(135deg);
+                pointer-events: none;
+            }
+        }
+    }
+
+    &.file {
+        display: block;
+    }
+
+    &.checkbox,
+    &.radio {
+        label,
+        .label {
+            display: inline;
+            font-weight: unset  ;
+        }
+    }
+}
+
+.btn-toolbar {
+    margin-top: 1rem;
+
+    .action {
+        @extend .button;
+        @extend .is-primary;
+    }
 }
