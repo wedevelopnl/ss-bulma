@@ -1,0 +1,130 @@
+{% extends "base.njk" %}
+{% block content %}
+    <div class="section">
+        <div class="container">
+            <div class="content">
+                <h2>Nav</h2>
+                <p>
+                    A simple spaced nav element for horizontal and vertical navs. Just put a <code>ul</code> or
+                    <code>ol</code> inside a <code>.nav</code>. The <code>li</code> takes both <code>a</code> and
+                    <code>span</code> tags.
+                </p>
+                <h3 class="is-size-4">Horizontal</h3>
+                <p>By default the nav element is horizontal.</p>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="">Link item 1</a></li>
+                    <li><a href="">Link item 2</a></li>
+                    <li><span>Span item 3</span></li>
+                </ul>
+            </nav>
+            <div class="content mt-5">
+                <h3 class="is-size-4">Vertical</h3>
+                <p>
+                    Adding a <code>.is-vertical</code> to the <code>.nav</code> makes it vertical. For vertical navs the
+                    spacing is halved.
+                </p>
+            </div>
+            <nav class="nav is-vertical">
+                <ul>
+                    <li><a href="">Link item 1</a></li>
+                    <li><a href="">Link item 2</a></li>
+                    <li><span>Span item 3</span></li>
+                </ul>
+            </nav>
+            <div class="content mt-5">
+                <h3 class="is-size-4">Spacings</h3>
+                <p>You can add several spacing classes to increase or decrease spacing.</p>
+            </div>
+            <table class="table is-bordered">
+                <tbody>
+                <tr>
+                    <td class="is-narrow pr-6">
+                        <code>.is-smallest</code>
+                    </td>
+                    <td class="is-narrow">
+                        <small class="tag">spacing</small>
+                    </td>
+                    <td>
+                        <code>$nav-gutter-smallest</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="is-narrow pr-6">
+                        <code>.is-smaller</code>
+                    </td>
+                    <td class="is-narrow">
+                        <small class="tag">spacing</small>
+                    </td>
+                    <td>
+                        <code>$nav-gutter-smaller</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>.is-small</code>
+                    </td>
+                    <td>
+                        <small class="tag">spacing</small>
+                    </td>
+                    <td>
+                        <code>$nav-gutter-small</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>.is-normal</code>
+                    </td>
+                    <td>
+                        <small class="tag">spacing</small>
+                    </td>
+                    <td>
+                        <code>$nav-gutter-normal</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>.is-medium</code>
+                    </td>
+                    <td>
+                        <small class="tag">spacing</small>
+                    </td>
+                    <td>
+                        <code>$nav-gutter-medium</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>.is-large</code>
+                    </td>
+                    <td>
+                        <small class="tag">spacing</small>
+                    </td>
+                    <td>
+                        <code>$nav-gutter-large</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>.is-larger</code>
+                    </td>
+                    <td>
+                        <small class="tag">spacing</small>
+                    </td>
+                    <td>
+                        <code>$nav-gutter-larger</code>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <nav class="nav is-larger mt-3">
+                <ul>
+                    <li><a href="">Link item 1</a></li>
+                    <li><a href="">Link item 2</a></li>
+                    <li><span>Span item 3</span></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+{% endblock %}

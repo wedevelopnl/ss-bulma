@@ -1,0 +1,70 @@
+{% extends "base.njk" %}
+{% block content %}
+    <div class="section">
+        <div class="container">
+            <div class="content">
+                <h2>Silverstripe messages</h2>
+                <p>
+                    Since Silverstripe renders it's own messages with their own classes they are not styled by default.
+                    To solve this problem we add some default styling. Their are multiple classes for each message type
+                    as some modules use different classes.
+                </p>
+                <p>
+                    <span class="message">Default message</span>
+                    <span class="message is-info">Info message</span>
+                    <span class="message is-warning">Warning message</span>
+                    <span class="message is-danger">Danger message</span>
+                    <span class="message is-success">Success message</span>
+                </p>
+            </div>
+            <table class="table is-bordered">
+                <tbody>
+                <tr>
+                    <td class="is-narrow pr-6">
+                        <code>.is-info / .info</code>
+                    </td>
+                    <td class="is-narrow">
+                        <small class="tag">color</small>
+                    </td>
+                    <td>
+                        <code>$info</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="is-narrow pr-6">
+                        <code>.is-warning / .warning / .notice / .validation</code>
+                    </td>
+                    <td class="is-narrow">
+                        <small class="tag">color</small>
+                    </td>
+                    <td>
+                        <code>$warning</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="is-narrow pr-6">
+                        <code>.is-danger / .danger / .bad / .error / .required</code>
+                    </td>
+                    <td class="is-narrow">
+                        <small class="tag">color</small>
+                    </td>
+                    <td>
+                        <code>$danger</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="is-narrow pr-6">
+                        <code>.is-success / .success / .good</code>
+                    </td>
+                    <td class="is-narrow">
+                        <small class="tag">color</small>
+                    </td>
+                    <td>
+                        <code>$success</code>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}
