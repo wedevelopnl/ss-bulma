@@ -7,9 +7,17 @@ Extension for Bulma css framework intended for use with SilverStripe.
 3. Visit http://localhost:5000/
 4. For compiling sass run `npm run dev`
 
-# TODO
-* silverstripe/form default form field styling (steven)
-* template engine for nav/footer (ridvan)
+# TODO RIDVAN
+* wbmn/tables
+* wbmn/embed
+* wbmn/holygrail
+
+# TODO STEVEN
+* wbmn/sections
+* wbmn/visual
+* wbmn/content
+* wbmn/links
+* silverstripe/form default form field styling
 
 ### Integrating Nunjucks with PHPStorm
 1. Go to File > Settings > Editor > File Types
