@@ -10,3 +10,8 @@ Extension for Bulma css framework intended for use with SilverStripe.
 # TODO
 * silverstripe/form default form field styling (steven)
 * template engine for nav/footer (ridvan)
+
+### Integrating Nunjucks with PHPStorm
+1. Go to File > Settings > Editor > File Types
+2. Search for `Twig`
+3. Add a new custom pattern `*.njk`
