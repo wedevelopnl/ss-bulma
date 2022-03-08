@@ -4,8 +4,140 @@
         <div class="container">
             <div class="content">
                 <h1>Sections</h1>
-                <p>About sections.</p>
+                <p>
+                    A lot of webpages are divided into different horizontal rows with different backgrounds (a color or
+                    images for instance). We call these blocks "sections". Each <code>.section</code> has a top and bottom padding, to
+                    create some whitespace between the content. You can change the amount of padding by adding a
+                    <code>.is-{size}</code> class to the section. Stacking multiple sections without a background color
+                    or visual will remove the top padding of the next sibling to prevent double padding.
+                </p>
             </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="content">
+                <p>
+                    For instance, this content is in another section. But since both the previous and this section don't
+                    have a background, the top padding of this section is removed. Adding another section <em>with</em>
+                    a background won't have the same effect of course.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section has-background-white-ter">
+        <div class="container">
+            <div class="content">
+                <p>
+                    Because this section has a background color, it still has it's top padding.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <table class="table is-bordered">
+                <tbody>
+                <tr>
+                    <td class="is-narrow pr-6">
+                        <code>.is-smallest</code>
+                    </td>
+                    <td class="is-narrow">
+                        <small class="tag">padding-top, padding-bottom</small>
+                    </td>
+                    <td>
+                        <code>$section-padding-smallest</code>
+                    </td>
+                    <td>
+                        <code>10px</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="is-narrow pr-6">
+                        <code>.is-smaller</code>
+                    </td>
+                    <td class="is-narrow">
+                        <small class="tag">padding-top, padding-bottom</small>
+                    </td>
+                    <td>
+                        <code>$section-padding-smaller</code>
+                    </td>
+                    <td>
+                        <code>30px</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>.is-small</code>
+                    </td>
+                    <td>
+                        <small class="tag">padding-top, padding-bottom</small>
+                    </td>
+                    <td>
+                        <code>$section-padding-small</code>
+                    </td>
+                    <td>
+                        <code>50px</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>.is-normal</code>
+                    </td>
+                    <td>
+                        <small class="tag">padding-top, padding-bottom</small>
+                    </td>
+                    <td>
+                        <code>$section-padding-normal</code>
+                    </td>
+                    <td>
+                        <code>75px</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>.is-medium</code>
+                    </td>
+                    <td>
+                        <small class="tag">padding-top, padding-bottom</small>
+                    </td>
+                    <td>
+                        <code>$section-padding-medium</code>
+                    </td>
+                    <td>
+                        <code>100px</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>.is-large</code>
+                    </td>
+                    <td>
+                        <small class="tag">padding-top, padding-bottom</small>
+                    </td>
+                    <td>
+                        <code>$section-padding-large</code>
+                    </td>
+                    <td>
+                        <code>125px</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>.is-larger</code>
+                    </td>
+                    <td>
+                        <small class="tag">padding-top, padding-bottom</small>
+                    </td>
+                    <td>
+                        <code>$section-padding-larger</code>
+                    </td>
+                    <td>
+                        <code>175px</code>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </section>
 {% endblock %}

@@ -13,10 +13,8 @@ Get to work boys!
 ### Ridvan
 * wbmn/tables
 * wbmn/embed
-* wbmn/holygrail
 
 ### Steven
-* wbmn/sections
 * wbmn/content
 * wbmn/links
 * silverstripe/form default form field styling
