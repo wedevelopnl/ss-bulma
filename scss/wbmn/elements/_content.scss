@@ -1,19 +1,6 @@
 //=======================================================
 //  CONTENT
 //=======================================================
-a {
-    transition: $transition-1;
-}
-
-.has-link-stretched {
-    position: relative;
-
-    a:not(.is-stretched) {
-        position: relative;
-        z-index: 10;
-    }
-}
-
 strong  {
     color: unset;
     font-weight: $weight-semibold;
@@ -21,20 +8,6 @@ strong  {
 
 address {
     font-style: normal;
-}
-
-.content {
-    p,
-    dl,
-    ol,
-    ul,
-    blockquote,
-    pre,
-    table {
-        &:not(:last-child) {
-            margin-bottom: $block-spacing;
-        }
-    }
 }
 
 //=======================================================
