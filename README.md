@@ -11,7 +11,6 @@ Extension for Bulma css framework intended for use with SilverStripe.
 Get to work boys!
 
 ### Steven
-* wbmn/links
 * silverstripe/form default form field styling
 
 # STYLE GUIDE

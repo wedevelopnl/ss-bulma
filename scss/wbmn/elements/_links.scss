@@ -5,15 +5,6 @@ a {
     transition: $transition-1;
 }
 
-.has-link-stretched {
-    position: relative;
-
-    a:not(.is-stretched) {
-        position: relative;
-        z-index: 10;
-    }
-}
-
 //=======================================================
 //  LINK COLORS
 //=======================================================

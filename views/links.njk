@@ -4,8 +4,64 @@
         <div class="container">
             <div class="content">
                 <h1>Links</h1>
-                <p>About links.</p>
+                <p>
+                    With bulma you can add a color class (for instance <code>.has-text-white</code> to change the color
+                    of a link but you can't control the hover, or do this for multiple links. You can choose from any
+                    color in the <code>$colors</code> array. We add some classes to make this possible. These classes
+                    ignore the <code>.button</code> so the button styling stays intact.
+                </p>
+                <p>
+                    We also added a default css transiton to the <code>&lt;a&gt;</code> tag.
+                </p>
+                <h2 class="is-size-4">
+                    Multiple links color
+                </h2>
+                <p>
+                    By default <a href="">all</a> <a href="">links</a> have a blue color (set in the <code>$link</code>
+                    var). By adding <code>.has-links-primary</code>
+                    <span class="has-links-primary">
+                        for instance to a parent element all link children of this element have the primary color:
+                        <a href="">link 1</a> and <a href="">link 2</a>
+                    </span>
+                </p>
+                <h2 class="is-size-4">
+                    Single link hover color
+                </h2>
+                <p>
+                    By default a <a href="">link</a> has a black hover color (set in the <code>$link-hover</code> var).
+                    By adding <code>.has-hover-primary</code> for instance you can change this to the primary color:
+                    <a href="" class="has-hover-primary">link</a>.
+                </p>
+                <h2 class="is-size-4">
+                    Multiple links hover color
+                </h2>
+                <p class="has-links-hover-primary">
+                    You can also change the hover color of all children by adding <code>.has-links-hover-primary</code>:
+                    <a href="">link 1</a> and <a href="">link 2</a>
+                </p>
             </div>
+            <table class="table is-bordered">
+                <tbody>
+                <tr>
+                    <td class="is-narrow pr-6">
+                        <code>&lt;a&gt;</code>
+                    </td>
+                    <td class="is-narrow">
+                        <small class="tag">transition</small>
+                    </td>
+                    <td>
+                        <code>$transition-1</code><br>
+                        <code>$transition-time</code><br>
+                        <code>$transition-animation</code>
+                    </td>
+                    <td>
+                        <code>all $transition-time $transition-animation</code><br>
+                        <code>0.25s</code><br>
+                        <code>ease-out</code>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </section>
 {% endblock %}
