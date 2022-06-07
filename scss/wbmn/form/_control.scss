@@ -1,0 +1,43 @@
+input:not([type="checkbox"]):not([type="radio"]),
+textarea,
+.textarea,
+.input,
+select:not(.is-multiple),
+.button,
+.action {
+    border-radius: $control-radius;
+    border-width: $control-border-width;
+    padding: $control-padding-vertical $control-padding-horizontal;
+    line-height: $control-line-height;
+    height: auto;
+    font-size: $control-font-size;
+}
+
+@each $name, $control in $control-sizes {
+    $padding-vertical: nth($control, 1);
+    $padding-horizontal: nth($control, 2);
+    $line-height: nth($control, 3);
+    $font-size: nth($control, 4);
+
+    form,
+    .field,
+    .control {
+        &.is-#{$name} {
+            input:not([type="checkbox"]):not([type="radio"]),
+            textarea,
+            .textarea,
+            .input,
+            select:not(.is-multiple),
+            .button,
+            .action {
+                padding: $padding-vertical $padding-horizontal;
+                line-height: $line-height;
+                font-size: $font-size;
+            }
+
+            label {
+                font-size: $font-size;
+            }
+        }
+    }
+}
