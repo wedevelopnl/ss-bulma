@@ -14,10 +14,18 @@
 
   // REMOVE DOUBLE PADDING
   &:not([class*="has-background-"]):not(.is-styled):not(.visual) {
+    + .section:not([class*="has-background-"]):not(.is-styled):not(.visual),
+    + .section.has-background-gradient {
+      padding-top: 0;
+    }
+  }
+
+  &.has-background-gradient {
     + .section:not([class*="has-background-"]):not(.is-styled):not(.visual) {
       padding-top: 0;
     }
   }
+
   @each $name, $pair in $colors {
     &.has-background-#{$name}:not(.is-styled):not(.visual) {
       + .section.has-background-#{$name}:not(.is-styled):not(.visual) {
@@ -27,9 +35,9 @@
   }
 }
 
-@media(max-width: $desktop) {
-  .section:not(li):not(.is-smaller):not(.is-smallest) {
-    padding-top: $section-padding-mobile;
-    padding-bottom: $section-padding-mobile;
-  }
+@include touch {
+    .section:not(li):not(.is-smaller):not(.is-smallest) {
+        padding-top: $section-padding-mobile;
+        padding-bottom: $section-padding-mobile;
+    }
 }

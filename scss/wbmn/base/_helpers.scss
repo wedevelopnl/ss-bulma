@@ -1,4 +1,27 @@
 //=======================================================
+//  MISC
+//=======================================================
+.has-shadow {
+    box-shadow: $shadow !important;
+}
+
+.has-radius {
+    border-radius: $radius !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+//=======================================================
 //  OPACITIES
 //=======================================================
 @each $opacity, $value in $opacities {
@@ -38,4 +61,166 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+
+//=======================================================
+//  NEGATIVE SPACER CLASSES
+//=======================================================
+
+// SPACINGS
+@each $property, $shortcut in $spacing-shortcuts {
+    @each $name, $value in $spacing-values {
+        // All directions
+        .#{$shortcut}-n#{$name} {
+            #{$property}: -$value !important;
+        }
+
+        // Cardinal directions
+        @each $direction, $suffix in $spacing-directions {
+            .#{$shortcut}#{$suffix}-n#{$name} {
+                #{$property}-#{$direction}: -$value !important;
+            }
+        }
+
+        // Horizontal axis;
+        @if $spacing-horizontal != null {
+            .#{$shortcut}#{$spacing-horizontal}-n#{$name} {
+                #{$property}-left: -$value !important;
+                #{$property}-right: -$value !important;
+            }
+        }
+
+        // Vertical axis;
+        @if $spacing-vertical != null {
+            .#{$shortcut}#{$spacing-vertical}-n#{$name} {
+                #{$property}-top: -$value !important;
+                #{$property}-bottom: -$value !important;
+            }
+        }
+    }
+}
+
+//=======================================================
+//  POINTERS
+//=======================================================
+.pointer-events-none {
+    pointer-events: none;
+}
+
+//=======================================================
+//  CARDS EQUAL
+//=======================================================
+.has-cards-equal {
+    .card {
+        height: 100%;
+    }
+}
+
+//=======================================================
+//  VIEWPORT HELPERS
+//=======================================================
+$viewports: (
+    "mobile":               (0,                 $tablet - 1px),
+    "tablet":               ($tablet,           100vw),
+    "tablet-only":          ($tablet,           $desktop - 1px),
+    "touch":                (0,                 $desktop - 1px),
+    "desktop":              ($desktop           100vw),
+    "desktop-only":         ($desktop,          $widescreen - 1px),
+    "until-widescreen":     ($widescreen - 1px, 100vw)
+);
+
+@each $viewport, $sizes in $viewports {
+    $from: nth($sizes, 1);
+    $until: nth($sizes, 2);
+
+    @media (min-width: $from) and (max-width: $until) {
+        @each $order, $value in $orders {
+            .has-order-#{$order}-#{$viewport} {
+                order: $order !important;
+            }
+        }
+        @each $property, $shortcut in $spacing-shortcuts {
+            @each $name, $value in $spacing-values {
+                // All directions
+                .#{$shortcut}-n#{$name}-#{$viewport} {
+                    #{$property}: -$value !important;
+                }
+                .#{$shortcut}-#{$name}-#{$viewport} {
+                    #{$property}: $value !important;
+                }
+
+                // Cardinal directions
+                @each $direction, $suffix in $spacing-directions {
+                    .#{$shortcut}#{$suffix}-n#{$name}-#{$viewport} {
+                        #{$property}-#{$direction}: -$value !important;
+                    }
+                    .#{$shortcut}#{$suffix}-#{$name}-#{$viewport} {
+                        #{$property}-#{$direction}: $value !important;
+                    }
+                }
+
+                // Horizontal axis;
+                @if $spacing-horizontal != null {
+                    .#{$shortcut}#{$spacing-horizontal}-n#{$name}-#{$viewport} {
+                        #{$property}-left: -$value !important;
+                        #{$property}-right: -$value !important;
+                    }
+                    .#{$shortcut}#{$spacing-horizontal}-#{$name}-#{$viewport} {
+                        #{$property}-left: $value !important;
+                        #{$property}-right: $value !important;
+                    }
+                }
+
+                // Vertical axis;
+                @if $spacing-vertical != null {
+                    .#{$shortcut}#{$spacing-vertical}-n#{$name}-#{$viewport} {
+                        #{$property}-top: -$value !important;
+                        #{$property}-bottom: -$value !important;
+                    }
+                    .#{$shortcut}#{$spacing-vertical}-#{$name}-#{$viewport} {
+                        #{$property}-top: $value !important;
+                        #{$property}-bottom: $value !important;
+                    }
+                }
+            }
+        }
+
+        @each $value in $flex-direction-values {
+            .is-flex-direction-#{$value}-#{$viewport} {
+                flex-direction: $value !important;
+            }
+        }
+        @each $value in $flex-wrap-values {
+            .is-flex-wrap-#{$value}-#{$viewport} {
+                flex-wrap: $value !important;
+            }
+        }
+        @each $value in $justify-content-values {
+            .is-justify-content-#{$value}-#{$viewport} {
+                justify-content: $value !important;
+            }
+        }
+        @each $value in $align-content-values {
+            .is-align-content-#{$value}-#{$viewport} {
+                align-content: $value !important;
+            }
+        }
+        @each $value in $align-items-values {
+            .is-align-items-#{$value}-#{$viewport} {
+                align-items: $value !important;
+            }
+        }
+        @each $value in $align-self-values {
+            .is-align-self-#{$value}-#{$viewport} {
+                align-self: $value !important;
+            }
+        }
+        @each $operator in $flex-operators {
+            @for $i from 0 through 5 {
+                .is-flex-#{$operator}-#{$i}-#{$viewport} {
+                    flex-#{$operator}: $i !important;
+                }
+            }
+        }
+    }
 }

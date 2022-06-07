@@ -3,17 +3,28 @@
 //=======================================================
 .message {
     border: $border-1;
-    padding: 0.5rem 1rem;
+    padding: $message-body-padding;
     font-size: $size-7;
     background-color: lighten($text, 60);
-    border-color: $text;
     border-radius: $radius;
+
+    .message-body {
+        border: 0;
+        padding: 0;
+        color: unset !important;
+    }
 
     &.is-info,
     &.info {
         color: $info;
         background-color: lighten($info, 41);
         border-color: $info;
+
+        .message-body {
+            * {
+                color: $info;
+            }
+        }
     }
 
     &.is-warning,
@@ -23,6 +34,12 @@
         color: $warning;
         background-color: lighten($warning, 45);
         border-color: $warning;
+
+        .message-body {
+            * {
+                color: $warning;
+            }
+        }
     }
 
     &.is-danger,
@@ -33,6 +50,12 @@
         color: $danger;
         background-color: lighten($danger, 35);
         border-color: $danger;
+
+        .message-body {
+            * {
+                color: $danger;
+            }
+        }
     }
 
     &.is-success,
@@ -41,5 +64,11 @@
         color: $success;
         background-color: lighten($success, 43);
         border-color: $success;
+
+        .message-body {
+            * {
+                color: $success;
+            }
+        }
     }
 }

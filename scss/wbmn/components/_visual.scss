@@ -31,7 +31,7 @@
     // SIZES
     @each $name, $value in $visualSizes {
         &.is-#{$name} {
-            min-height: $value;
+            min-height: $value !important;
         }
     }
 }
@@ -41,7 +41,7 @@
     padding-left: $column-gap;
 }
 
-@media screen and (max-width: $tablet) {
+@include until($desktop) {
     .visual:not(.is-full-screen) {
         min-height: 0 !important;
     }

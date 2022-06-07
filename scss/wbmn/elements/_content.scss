@@ -28,8 +28,8 @@ h6,
 .content h6 {
     font-family: $family-secondary;
     font-weight: $title-weight;
-    margin-top: 0 !important;
     color: unset;
+    margin-bottom: $block-spacing;
 
     &:last-child {
         margin-bottom: 0;
