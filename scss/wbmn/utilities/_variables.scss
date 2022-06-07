@@ -100,10 +100,7 @@ $border-size-1: 1px;
 $border-1: $border-size-1 solid $border;
 
 // GRID
-$column-gap:                    1rem !default;
 $column-gap-large:              2rem !default;
-
-$container-fluid-max-width:     1720px + (2 * $gap) !default;
 
 // Card
 $card-content-padding:          2rem !default;
