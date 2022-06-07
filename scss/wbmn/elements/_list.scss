@@ -2,60 +2,71 @@
     display: flex;
     flex-direction: column;
 
-    &.is-horizontal {
-        margin: 0 (calc(-#{$list-gap-normal} / 2));
-        flex-direction: row;
-        flex-wrap: wrap;
-
-        .list-item,
-        li {
-            padding-top: 0;
-            padding-bottom: (calc(#{$list-gap-normal} / 2));
-            padding-left: (calc(#{$list-gap-normal} / 2));
-            padding-right: (calc(#{$list-gap-normal} / 2));
+    > li,
+    > .list-item {
+        > a,
+        > span {
+            display: flex;
+            align-items: center;
         }
+    }
 
-        &.is-small {
-            margin: 0 (calc(-#{$list-gap-small} / 2));
+    // VERTICAL
+    &:not(.is-horizontal) {
+        @each $name, $value in $list-gutters {
+            &.is-#{$name} {
+                margin-top: -($value / 4) !important;
+                margin-bottom: -($value / 4) !important;
 
-            .list-item,
-            li {
-                padding-bottom: (calc(#{$list-gap-small} / 3));
-                padding-left: (calc(#{$list-gap-small} / 2));
-                padding-right: (calc(#{$list-gap-small} / 2));
-            }
-        }
-
-        &.is-large {
-            margin: 0 (calc(-#{$list-gap-large} / 2));
-
-            .list-item,
-            li {
-                padding-left: (calc(#{$list-gap-large} / 2));
-                padding-right: (calc(#{$list-gap-large} / 2));
-            }
-        }
-
-        @include from($desktop) {
-            &.is-dotted {
-                .list-item,
-                li {
-                    &:not(:last-child) {
-                        position: relative;
-
-                        &::after {
-                            content: "";
-                            background-color: $primary-dark;
-                            width: 2px;
-                            height: 2px;
-                            position: absolute;
-                            right: 0;
-                            top: 50%;
-                            transform: translateY(-50%) translateX(50%);
-                        }
+                > li,
+                > .list-item {
+                    > a,
+                    > span {
+                        padding-top: ($value / 4) !important;
+                        padding-bottom: ($value / 4) !important;
                     }
                 }
             }
+        }
+    }
+
+    // HORIZONTAL
+    &.is-horizontal {
+        margin-left: -($list-gutter-normal / 2);
+        margin-right: -($list-gutter-normal / 2);
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        > li,
+        > .list-item {
+            padding-left: ($list-gutter-normal / 2);
+            padding-right: ($list-gutter-normal / 2);
+        }
+
+        // SPACINGS SIZES
+        @each $name, $value in $list-gutters {
+            &.is-#{$name} {
+                margin-left: -($value / 2);
+                margin-right: -($value / 2);
+
+                > li,
+                > .list-item {
+                    padding-left: ($value / 2);
+                    padding-right: ($value / 2);
+                }
+            }
+        }
+    }
+
+    // GUTTERLESS
+    &.is-gutterless {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+
+        > li,
+        > .list-item {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
         }
     }
 }
