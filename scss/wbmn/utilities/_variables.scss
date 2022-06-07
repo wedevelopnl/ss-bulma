@@ -24,23 +24,23 @@ $sectionPaddings: (
 ) !default;
 
 // NAV
-$nav-gutter-smallest: 5px !default;
-$nav-gutter-smaller: 10px !default;
-$nav-gutter-small: 15px !default;
-$nav-gutter-normal: 30px !default;
-$nav-gutter-medium: 40px !default;
-$nav-gutter-large: 50px !default;
-$nav-gutter-larger: 75px !default;
+$list-gutter-smallest: 5px !default;
+$list-gutter-smaller: 10px !default;
+$list-gutter-small: 15px !default;
+$list-gutter-normal: 30px !default;
+$list-gutter-medium: 40px !default;
+$list-gutter-large: 50px !default;
+$list-gutter-larger: 75px !default;
 
-$navGutters: (
+$list-gutters: (
     "none": 0,
-    "smallest": $nav-gutter-smallest,
-    "smaller": $nav-gutter-smaller,
-    "small": $nav-gutter-small,
-    "normal": $nav-gutter-normal,
-    "medium": $nav-gutter-medium,
-    "large": $nav-gutter-large,
-    "larger": $nav-gutter-larger,
+    "smallest": $list-gutter-smallest,
+    "smaller": $list-gutter-smaller,
+    "small": $list-gutter-small,
+    "normal": $list-gutter-normal,
+    "medium": $list-gutter-medium,
+    "large": $list-gutter-large,
+    "larger": $list-gutter-larger,
 ) !default;
 
 // INDEXES
@@ -98,11 +98,6 @@ $transition-1: all $transition-time $transition-animation;
 // BORDER
 $border-size-1: 1px;
 $border-1: $border-size-1 solid $border;
-
-// Lists
-$list-gap-small:    $size-small;
-$list-gap-normal:   $size-normal;
-$list-gap-large:    $size-large;
 
 // GRID
 $column-gap:                    1rem !default;
