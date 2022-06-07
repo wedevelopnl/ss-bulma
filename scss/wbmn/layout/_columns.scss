@@ -1,0 +1,57 @@
+//=======================================================
+//  COLUMNS
+//
+//  Fixes a responsive behaviour bulma does, that doesn't
+//  fit our grid module
+//=======================================================
+@media (min-width: $desktop) {
+    .columns {
+        &.is-large-desktop,
+        &.is-large-x-desktop {
+            margin-left: -$column-gap-large;
+            margin-right: -$column-gap-large;
+
+            .column {
+                padding-left: $column-gap-large;
+                padding-right: $column-gap-large;
+            }
+        }
+
+        &.is-large-desktop,
+        &.is-large-y-desktop {
+            margin-top: -$column-gap-large;
+
+            &:last-child {
+                margin-bottom: -$column-gap-large;
+            }
+
+            .column {
+                padding-top: $column-gap-large;
+                padding-bottom: $column-gap-large;
+            }
+        }
+    }
+}
+
+.container {
+    &.is-fluid {
+        max-width: $container-fluid-max-width !important;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.column {
+    width: 100%;
+    flex-basis: auto;
+    flex-grow: unset;
+    flex-shrink: 0;
+
+    // ADD BULMA DEFAULT COLUMN CLASS
+    &.is-fill {
+        width: unset;
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+}

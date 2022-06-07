@@ -5,37 +5,59 @@ a {
     transition: $transition-1;
 }
 
+.has-link-opaque {
+    opacity: 0.5;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.has-links-opaque {
+    a {
+        opacity: 0.5;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
 //=======================================================
 //  LINK COLORS
 //=======================================================
 @each $name, $pair in $colors {
-  $color: nth($pair, 1);
+    $color: nth($pair, 1);
 
-  // SINGLE LINK
-  a:not(.button) {
-    &.has-hover-#{$name} {
-      &:hover {
-        color: $color !important;
-      }
-    }
-  }
-
-  // MULTIPLE LINKS
-  .has-links-#{$name} {
+    // SINGLE LINK
     a:not(.button) {
-      color: $color;
-
-      &:hover {
-        color: darken($color, 10);
-      }
+        &.has-hover-#{$name} {
+            &:hover {
+                color: $color !important;
+            }
+        }
     }
-  }
 
-  .has-links-hover-#{$name} {
-    a:not(.button) {
-      &:hover {
-        color: $color;
-      }
+    // MULTIPLE LINKS
+    .has-links-#{$name} {
+        a:not(.button) {
+            color: $color;
+
+            &:hover {
+                color: darken($color, 10);
+            }
+        }
     }
-  }
+}
+
+@each $name, $pair in $colors {
+    $color: nth($pair, 1);
+
+    .has-links-hover-#{$name} {
+        a:not(.button) {
+            &:hover {
+                color: $color;
+            }
+        }
+    }
 }
