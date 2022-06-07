@@ -110,6 +110,32 @@ $backdrop:                      rgba($black, 0.5) !default;
 $offcanvas-width:               350px !default;
 $offcanvas-brand-height:        35px !default;
 
+// Controls
+// Small
+$control-padding-vertical-small:    0.75rem;
+$control-padding-horizontal-small:  1rem;
+$control-line-height-small:         1.25rem;
+$control-font-size-small:           0.9rem;
+
+// Normal
+$control-padding-vertical:          0.85rem;
+$control-padding-horizontal:        1.25rem;
+$control-line-height:               1.35rem;
+$control-font-size:                 1rem;
+
+// Large
+$control-padding-vertical-large:    1rem;
+$control-padding-horizontal-large:  1.5rem;
+$control-line-height-large:         1.75rem;
+$control-font-size-large:           1.25;
+
+$control-sizes: (
+    "small":                        ($control-padding-vertical-small, $control-padding-horizontal-small, $control-line-height-small, $control-font-size-small),
+    "normal":                       ($control-padding-vertical, $control-padding-horizontal, $control-line-height, $control-font-size),
+    "large":                        ($control-padding-vertical-large, $control-padding-horizontal-large, $control-line-height-large, $control-font-size-large),
+);
+
+// COlors
 $custom-colors: (
     "transparent": (hsla(0,0,0,0), $text),
 );
