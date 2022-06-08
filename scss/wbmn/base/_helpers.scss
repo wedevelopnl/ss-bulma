@@ -126,7 +126,9 @@ $viewports: (
     "touch":                (0,                 $desktop - 1px),
     "desktop":              ($desktop           100vw),
     "desktop-only":         ($desktop,          $widescreen - 1px),
-    "until-widescreen":     ($widescreen - 1px, 100vw)
+    "widescreen":           ($widescreen,       100vw),
+    "widescreen-only":      ($widescreen,       $fullhd - 1px),
+    "fullhd":               ($fullhd,           100vw),
 );
 
 @each $viewport, $sizes in $viewports {
