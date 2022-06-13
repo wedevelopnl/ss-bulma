@@ -36,7 +36,7 @@
 }
 
 @include touch {
-    .section:not(li):not(.is-smaller):not(.is-smallest) {
+    .section:not(li):not(.is-smaller):not(.is-smallest):not(.is-none) {
         padding-top: $section-padding-mobile;
         padding-bottom: $section-padding-mobile;
     }
