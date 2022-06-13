@@ -54,3 +54,30 @@
         flex-shrink: 1;
     }
 }
+
+//=======================================================
+//  COLUMN BREAKOUTS FOR CONTENT ELEMENTS
+//=======================================================
+@media screen and (min-width: $fullhd) {
+    .has-breakout-left {
+        .image {
+            margin-left: -$offset-width;
+        }
+    }
+
+    .has-breakout-right {
+        .image {
+            margin-right: -$offset-width;
+        }
+    }
+}
+
+@include from($desktop) {
+    .has-offset-left-desktop {
+        margin-left: calc(#{$offset-width} - #{$gap});
+    }
+
+    .has-offset-right-desktop {
+        margin-right: calc(#{$offset-width} - #{$gap});
+    }
+}
