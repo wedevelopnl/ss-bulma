@@ -101,6 +101,7 @@ $border-1: $border-size-1 solid $border;
 
 // GRID
 $column-gap-large:              2rem !default;
+$offset-width:                  96px !default;
 
 // Card
 $card-content-padding:          2rem !default;
@@ -135,7 +136,7 @@ $control-sizes: (
     "large":                        ($control-padding-vertical-large, $control-padding-horizontal-large, $control-line-height-large, $control-font-size-large),
 );
 
-// COlors
+// Colors
 $custom-colors: (
     "transparent": (hsla(0,0,0,0), $text),
 );
