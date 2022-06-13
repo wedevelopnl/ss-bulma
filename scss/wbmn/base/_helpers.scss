@@ -1,6 +1,22 @@
 //=======================================================
 //  MISC
 //=======================================================
+.is-absolute {
+    position: absolute !important;
+}
+
+.is-static {
+    position: static !important;
+}
+
+.is-letter-spaced {
+    letter-spacing: $extra-letter-spacing !important;
+}
+
+.has-transition {
+    transition: $transition-1 !important;
+}
+
 .has-shadow {
     box-shadow: $shadow !important;
 }
