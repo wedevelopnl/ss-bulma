@@ -11,7 +11,7 @@
             margin-left: -$column-gap-large;
             margin-right: -$column-gap-large;
 
-            .column {
+            > .column {
                 padding-left: $column-gap-large;
                 padding-right: $column-gap-large;
             }
@@ -25,7 +25,7 @@
                 margin-bottom: -$column-gap-large;
             }
 
-            .column {
+            > .column {
                 padding-top: $column-gap-large;
                 padding-bottom: $column-gap-large;
             }
