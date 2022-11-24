@@ -113,34 +113,34 @@ $offcanvas-brand-height:        35px !default;
 
 // Controls
 // Small
-$control-padding-vertical-small:    0.75rem;
-$control-padding-horizontal-small:  1rem;
-$control-line-height-small:         1.25rem;
-$control-font-size-small:           0.9rem;
+$control-padding-vertical-small:    0.75rem !default;
+$control-padding-horizontal-small:  1rem !default;
+$control-line-height-small:         1.25rem !default;
+$control-font-size-small:           0.9rem !default;
 
 // Normal
-$control-padding-vertical:          0.85rem;
-$control-padding-horizontal:        1.25rem;
-$control-line-height:               1.35rem;
-$control-font-size:                 1rem;
+$control-padding-vertical:          0.85rem !default;
+$control-padding-horizontal:        1.25rem !default;
+$control-line-height:               1.35rem !default;
+$control-font-size:                 1rem !default;
 
 // Large
-$control-padding-vertical-large:    1rem;
-$control-padding-horizontal-large:  1.5rem;
-$control-line-height-large:         1.75rem;
-$control-font-size-large:           1.25;
+$control-padding-vertical-large:    1rem !default;
+$control-padding-horizontal-large:  1.5rem !default;
+$control-line-height-large:         1.75rem !default;
+$control-font-size-large:           1.25 !default;
 
 $control-sizes: (
     "small":                        ($control-padding-vertical-small, $control-padding-horizontal-small, $control-line-height-small, $control-font-size-small),
     "normal":                       ($control-padding-vertical, $control-padding-horizontal, $control-line-height, $control-font-size),
     "large":                        ($control-padding-vertical-large, $control-padding-horizontal-large, $control-line-height-large, $control-font-size-large),
-);
+) !default;
 
 // Colors
 $custom-colors: (
     "transparent": (hsla(0,0,0,0), $text),
-);
+) !default;
 
-$colors: map-merge($colors, $custom-colors);
+$colors: map-merge($colors, $custom-colors) !default;
 
-$extra-letter-spacing:              2px;
+$extra-letter-spacing:              2px !default;
