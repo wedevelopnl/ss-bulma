@@ -142,3 +142,5 @@ $custom-colors: (
 );
 
 $colors: map-merge($colors, $custom-colors);
+
+$extra-letter-spacing:              2px;
