@@ -49,7 +49,7 @@
 }
 
 select,
-input:not([type="radio"]):not([type="checkbox"]) {
+input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]) {
     @extend .input;
 }
 
